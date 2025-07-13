@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - iPortfolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+ <link href="{{ url_for('static', filename='img/favicon.png') }}" rel="icon">
+<link href="{{ url_for('static', filename='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+ <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor/aos/aos.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+
+  <!-- Main CSS File -->
+  <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="{{ url_for('static', filename='img/photo.jpg') }}" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="{{ url_for('index') }}" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Aashish Basnet</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://twitter.com/aashish_basnet" class="twitter" target="_blank"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://www.facebook.com/aashish.basnet.14418" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/_aashish_basnet_/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/aashish-basnet-63329620a/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Blogs</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="{{ url_for('static', filename='img/hero-bg.jpg') }}" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Aashish Basnet</h2>
+       <p style="font-family: 'Dancing Script', cursive;">
+    I'm <span class="typed" data-typed-items="Civil Engineer, Researcher, Environment Advocate, Content Creator">Designer</span>
+  </p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>I’m a passionate and skilled Civil Engineer with a strong ability to perform under pressure and deliver high-quality results. A dedicated multitasker, I work independently with precision and commitment. I strive to contribute meaningful, sustainable solutions through every project I undertake.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="{{ url_for('static', filename='img/photo.jpg') }}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Civil Engineer.</h2>
+            <p class="fst-italic py-3">
+              I'm a Civil Engineer specializing in structural design, construction management, and infrastructure planning. I work with AutoCAD, ETABS, SAP2000, MS Project, GIS, and HEC-RAS to deliver efficient and sustainable solutions.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>19 July 1998</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.basnetaashish.com.np</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+977 9860954315</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Kathmandu, Nepal</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>26</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bacholors</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>basnetaashish77@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+            My aim is to contribute to sustainable and resilient infrastructure development, particularly in regions like Nepal that face unique environmental and engineering challenges. I strive to integrate innovation, practicality, and sustainability in every project I work on—driven by a passion to build solutions that improve lives and protect the environment.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-building"></i>
+              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Project Completed</strong><br> <span>Solar Farm, Buildings</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Article Published</strong> <span><br>Review, Research</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Conference Presented</strong> <span></span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-file-bar-graph"></i>
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Technical Reports Prepared </strong> <span><br>DPR, Valuation and Other</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-cpu"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Software Developed </strong> <span></span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>My work is backed by a strong command of the following tools and techniques.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>AutoCAD</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Civil 3D</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Microsoft Office</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+            </div><!-- End Skills Item -->
+             <div class="progress">
+              <span class="skill"><span>SW Road</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>HEC RAS</span> <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>ETABS</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>GIS</span> <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+                 
+            <div class="progress">
+              <span class="skill"><span>Python</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>I am a civil engineer with solid experience in supervising construction projects and designing safe, efficient structures. Alongside my practical work, I have a strong passion for research and publication, constantly seeking to expand knowledge and contribute to advancements in the field. I am committed to integrating innovative solutions and best practices in both engineering and academic pursuits.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>About Me</h4>
+              <p><em>I have one year of experience working as a member of an EPC team on a solar energy project, where I contributed to the planning and execution phases. Additionally, I spent two years designing residential buildings, focusing on creating functional and efficient structural designs that meet client needs.</em></p>
+              <ul>
+                <li>Baiteshwor-05, Dolakha, Nepal</li>
+                <li>+977 9860954315</li>
+                <li>basnetaashish77@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+          
+            <div class="resume-item">
+              <h4>Bachelor of Civil Engineering</h4>
+              <h5>2017 - 2021</h5>
+              <p><em>Hillside College of Engineering, Purbanchal University, Nepal</em></p>
+              <h5>UnderGraduate Project</h5>
+              <p>“Detail Engineering Survey, Design and Estimation of Hill Road From THALI-CHANGUNARAYAN Road”</p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Civil Engineer</h4>
+              <h5>September 2023 - Present</h5>
+              <p><em>Lalitpur, Nepal </em></p>
+              <ul>
+                <li><b> Design and Structural Analysis:</b><br> Develop and analyze residential building designs, 
+including water supply systems, and Drainage systems, and ensure the building meets 
+safety, functionality, and regulatory standards</li>
+                <li><b>Supervision and Quality Control:</b><br> Oversee the construction process to ensure timely 
+execution and adherence to high-quality standards, addressing any issues promptly to 
+maintain project integrity </li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Graduate Engineering Trainee-Pure Energy Part-1</h4>
+              <h5>2022 - 2023</h5>
+              <p><em>Khajura, Banke , Nepal</em></p>
+              <ul>
+                <li> Managed site preparation, foundation installation, and execution of civil works for solar 
+infrastructure like Boundary wall, Main Control Room, Access Road, Culvert, Lightning Arrester, Field Low Tension Pannels, 
+Transformer Foundations, Main gate etc. as per drawings..</li>
+                <li> Ensured the construction work is of high quality and meets the required 
+standards and specifications through inspection and various Tests.</li>
+                <li> Ensured the construction site is safe for workers and visitors. This includes the tasks such as ensuring that workers are trained in safety procedures, monitoring 
+the construction site for hazards, and implementing safety protocols to prevent accidents.</li>
+                 <li> Coordinated with engineers and documented progress for timely project completion</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+        <p>Welcome to my project portfolio! Here, you'll find a collection of my work spanning professional projects, academic research, and software development. Each project represents my dedication to learning, building, and solving real-world challenges.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Professional Projects</li>
+            <li data-filter=".filter-product">Academic Projects</li>
+            <li data-filter=".filter-branding">Software Developed</li>
+            <li data-filter=".filter-books">Training and Certifications</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+               <img src="{{ url_for('static', filename='img/portfolio/app-1.jpg') }}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Solar Project</h4>
+                  <p>Pure Energy Part-1</p>
+                  <a href="{{ url_for('static', filename='img/portfolio/app-1.jpg') }}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="{{ url_for('portfolio_details') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="{{ url_for('static', filename='img/portfolio/product-1.png') }}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Research Paper</h4>
+                  <p>Collection of my research work on civil Engineering</p>
+                 <a href="{{ url_for('static', filename='img/portfolio/product-1.jpg') }}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+<a href="{{ url_for('portfolio_details1') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="{{ url_for('static', filename='img/portfolio/branding-1.png') }}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Software</h4>
+                  <p>Data Refiner</p>
+                  <a href="{{ url_for('static', filename='img/portfolio/branding-1.png') }}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="{{ url_for('portfolio_details2') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="{{ url_for('static', filename='img/portfolio/books-1.jpg') }}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Training</h4>
+                  <p>Training related to Engineering</p>
+                  <a href="{{ url_for('static', filename='img/portfolio/books-1.jpg') }}" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="{{ url_for('portfolio_details3') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="{{ url_for('static', filename='img/portfolio/app-2.jpg') }}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4> Residental Building</h4>
+                  <p>Design and Execution of numerious builing in kathmandu</p>
+                  <a href="{{ url_for('static', filename='img/portfolio/app-2.jpg') }}" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="{{ url_for('portfolio_details4') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="{{ url_for('static', filename='img/portfolio/product-2.jpg') }}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Conference Presentaion</h4>
+                  <p>Collection of my conference work on civil Engineering</p>
+                  <a href="{{ url_for('static', filename='img/portfolio/product-2.jpg') }}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="{{ url_for('portfolio_details5') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="{{ url_for('static', filename='img/portfolio/books-2.jpg') }}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Certification</h4>
+                  <p> Collection of all certification</p>
+                  <a href="{{ url_for('static', filename='img/portfolio/books-2.jpg') }}" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="{{ url_for('portfolio_details6') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Blogs</h2>
+        <p>This blog is a collection of my travels—whether for professional work, academic exploration, or simple moments of refreshment—each journey adding a unique perspective to my path as a civil engineer."</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
+         <div class="image mb-3">
+         <img src="{{ url_for('static', filename='img/portfolio/survey.jpg') }}" class="img-fluid rounded" alt="Topographical Survey at Listi Village">
+         </div>
+        
+         <div>
+         <h4 class="title">
+         <a href="{{ url_for('service_details') }}" class="stretched-link">Listi Village, Sindhupalchowk</a>
+         </h4>
+        <p class="description">Conducted a topographical survey in Listi village—an insightful experience in rural terrain mapping and academic collaboration.I am amazed by its Beauty.</p>
+        </div>
+       </div>
+          <!-- End Service Item -->
+
+        
+          <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="image mb-3">
+         <img src="{{ url_for('static', filename='img/portfolio/survey1.jpg') }}" class="img-fluid rounded" alt="Topographical Survey at Listi Village">
+         </div>
+        
+         <div>
+         <h4 class="title">
+         <a href="{{ url_for('service_details1') }}" class="stretched-link">Panchpokhari, Sindhupalchowk</a>
+         </h4>
+        <p class="description">The Panchpokhari trek passes through forests to sacred lakes, offering stunning views and cultural insight.</p>
+        </div>
+       </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="image mb-3">
+         <img src="{{ url_for('static', filename='img/portfolio/survey2.jpg') }}" class="img-fluid rounded" alt="Topographical Survey at Listi Village">
+         </div>
+        
+         <div>
+         <h4 class="title">
+         <a href="{{ url_for('service_details2') }}" class="stretched-link">Amayangri, Sindhupalchowk</a>
+         </h4>
+        <p class="description">Amayangri is a sacred pilgrimage site featuring a peaceful Buddhist gompa nestled within lush forests, offering spiritual serenity and beautiful mountain views</p>
+        </div>
+       </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>What People Say</h2>
+        <p>Hear what colleagues, mentors, and clients have to say about my work and professional journey</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Working alongside Aashish on our research was a truly enriching experience. His dedication, attention to detail, and collaborative spirit significantly contributed to the success of our project.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="{{ url_for('static', filename='img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
+                <h3>Sahitya Dulal</h3>
+                <h4>Engineer &amp; Researcher</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Collaborating with Aashish on the 10 MW solar plant project in West Nepal was an invaluable experience. His technical expertise and commitment played a key role in overcoming challenges and ensuring the project's success.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="{{ url_for('static', filename='img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt="">
+                <h3>Kamal Tolangi Rai</h3>
+                <h4>Civil Engineer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>As friends and classmates at Hillside College of Engineering, we’ve seen Aashish’s dedication and passion firsthand. His positive attitude and teamwork always made challenging projects more enjoyable and successful.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="{{ url_for('static', filename='img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt="">
+                <h3>Gautam Bham</h3>
+                <h4>Civil Engineer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Feel free to reach out for project inquiries, collaborations, or professional connections.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Kageshwori Manohara, Kathmandu, Nepal</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call</h3>
+                  <p>+977 9860954315</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>basnetaashish77@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+              <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.485750472625!2d85.4264464752085!3d27.703279925673853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb0ff7b02e3d05%3A0x59c1465d2e85084f!2sKageshwori%20Manohara%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1718189803444!5m2!1sen!2snp" 
+  width="100%" 
+  height="270" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Aashish Basnet</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/aos/aos.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/typed.js/typed.umd.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/purecounter/purecounter_vanilla.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/waypoints/noframework.waypoints.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+
+
+  <!-- Main JS File -->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+
+</html>
